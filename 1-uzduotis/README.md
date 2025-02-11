@@ -1,8 +1,18 @@
-# React + Vite
+# React JS karkaso paskaitos 1 praktinio darbo 1 uzduotis.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Pagrindinis tikslas:
 
-Currently, two official plugins are available:
+Sukurti užduočių sąrašą, kuriame vartotojas gali pridėti naujas užduotis, jas ištrinti ir pažymėti kaip atliktas.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Reikalavimai:
+
+- Naudoti useState užduočių sąrašui saugoti.
+- Sukurti formą su input lauku, kur vartotojas gali įrašyti naują užduotį ir ją pridėti.
+- Užduotį galima pažymėti kaip atliktą (keisti jos būseną).
+- Galimybė ištrinti užduotį.
+
+### Komponentai:
+
+- TaskList – saugo užduočių sąrašą ir perduoda jį į kitus komponentus.
+- TaskItem – atvaizduoja vieną užduotį su mygtukais „Pažymėti kaip atliktą“ ir „Ištrinti“.
+- TaskForm – turi input lauką ir mygtuką „Pridėti užduotį“.
