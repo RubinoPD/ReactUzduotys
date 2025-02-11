@@ -2,7 +2,7 @@ import React from "react";
 
 const TaskItem = ({ task, toggleComplete, deleteTask }) => {
   return (
-    <div>
+    <div className="task-item">
       <span
         style={{ textDecoration: task.completed ? "line-through" : "none" }}
       >
