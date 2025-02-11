@@ -1,8 +1,19 @@
-# React + Vite
+# React JS karkaso paskaitos 1 praktinio darbo 3 uzduotis.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Pagrindinis tikslas:
 
-Currently, two official plugins are available:
+Sukurti skaičių spėjimo žaidimą, kuriame vartotojas bando atspėti atsitiktinai sugeneruotą skaičių.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Reikalavimai:
+
+- Sugeneruoti atsitiktinį skaičių nuo 1 iki 100, kai komponentas užsikrauna.
+- Naudoti useState saugoti vartotojo įvestą skaičių ir bandymų skaičių.
+- Vartotojas įveda skaičių į laukelį ir spusteli mygtuką „Spėti“.
+- Jei skaičius per didelis – rodoma žinutė „Bandyk mažesnį“, jei per mažas – „Bandyk didesnį“.
+- Jei atspėja, rodoma žinutė „Teisingai!“.
+
+### Komponentai:
+
+- GuessGame – valdo žaidimo logiką ir rodo vartotojo įvestį.
+- GuessForm – turi input lauką ir mygtuką „Spėti“.
+- Message – rodo žinutę vartotojui apie jo bandymą.
