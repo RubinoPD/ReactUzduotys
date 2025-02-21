@@ -13,11 +13,21 @@ const App = () => {
   const [cartItems, setCartItems] = useState([]);
 
   const addToCart = (product) => {
-    setCartItems([...cartItems, product]);
+    const isInCart = cartItems.some((item) => item.id === product.id);
+    if (!isInCart) {
+      setCartItems([...cartItems, product]);
+    } else {
+      alert("Prekė jau yra krepšelyje");
+    }
   };
 
   const removeFromCart = (product) => {
-    setCartItems(cartItems.filter((item) => item.id !== product.id));
+    const index = cartItems.findIndex((item) => item.id === product.id);
+    if (index !== -1) {
+      const newCartItems = [...cartItems];
+      newCartItems.splice(index, 1);
+      setCartItems(newCartItems);
+    }
   };
 
   return (
